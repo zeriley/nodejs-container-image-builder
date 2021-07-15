@@ -1,7 +1,7 @@
 {
-  "name": "container-image-builder",
+  "name": "@zeriley/container-image-builder",
   "version": "3.2.0",
-  "description": "container image builder. without docker, docker/oci registry client and image building helpers for protocol version 2",
+  "description": "fork of google's, to allow ECR support. container image builder. without docker, docker/oci registry client and image building helpers for protocol version 2",
   "main": "build/src/index.js",
   "keywords": [],
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "author": "Ryan Day <ryaneday@google.com>",
   "license": "Apache 2.0",
-  "repository": "google/nodejs-container-image-builder",
+  "repository": "zeriley/nodejs-container-image-builder",
   "devDependencies": {
     "@types/cross-spawn": "^6.0.0",
     "@types/micromatch": "^3.1.0",
@@ -44,9 +44,6 @@
     "request": "^2.88.0",
     "tar": "^4.4.8",
     "walkdir": "^0.4.0"
-  },
-  "publishConfig": {
-    "registry": "https://wombat-dressing-room.appspot.com/container-image-builder/_ns"
   },
   "nyc": {
     "extension": ".ts"
