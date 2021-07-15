@@ -1,6 +1,8 @@
 container-image-builder
 =======================
 
+# AWS ECR does not conform to OCI specifications; this fork removes the status code validation to prevent ECR from crashing.  If you are not using ECR, use the google version of this library.
+
 A container registry client and image builder with no dependency on docker. This supports protocol version 2.
 
 This library has a few parts:
